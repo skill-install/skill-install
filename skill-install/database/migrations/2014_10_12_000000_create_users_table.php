@@ -19,6 +19,9 @@ class CreateUsersTable extends Migration
             $table->string('email')->unique();
             $table->string('password');
             $table->integer('status');
+            $table->string('confirmation_token')->nullable();  // 確認用トークン
+            $table->timestamp('confirmed_at')->nullable();  // 確認日時
+            $table->timestamp('confirmation_sent_at')->nullable();  // 確認メール送信日時
             $table->rememberToken();
             $table->timestamps();
         });
