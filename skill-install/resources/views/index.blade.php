@@ -4,6 +4,12 @@
 
 @endsection
 
+@section('css')
+    <link rel="stylesheet" href="/css/index_pc.css">
+    <!-- <link rel="stylesheet" href="/css/index_phone.css"> -->
+    <!-- <link rel="stylesheet" href="/css/index_tablet.css"> -->
+@endsection
+
 @section('body_title')
 トップページ
 @endsection
