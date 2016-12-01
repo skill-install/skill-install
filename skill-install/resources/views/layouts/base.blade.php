@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="/css/form.css">
     @yield('css')
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-    <script type="text/javascript" src="/js/jquery-2.2.3.min.js"></script>
+    <script type="text/javascript" src="/js/jquery-3.1.1.min.js"></script>
     @yield('head')
 </head>
 <body>
