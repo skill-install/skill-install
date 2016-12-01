@@ -16,11 +16,14 @@
 
 .list_title {
     margin: 20px 0;
+    /*padding: 0 10px;*/
     width: 100%;
     height: 40px;
+    /*color: #AFDCDD;*/
     color: #fff;
+    /*background: #444444;*/
     font-size: 18px;
-    font-weight: bold;
+    /*font-weight: bold;*/
     line-height: 40px;
 }
 
@@ -31,6 +34,11 @@
     height: calc(320px / 16 * 9);
 }
 
+.comunity {
+    perspective: 400px;
+    -webkit-perspective: 400px;
+}
+
 .lesson:nth-child(3n+2), .comunity:nth-child(3n+2) {
     margin: 0 10px;
 }
@@ -38,6 +46,32 @@
 .lesson:nth-child(1n+4), .comunity:nth-child(1n+4) {
     margin-top: 10px;
 }
+
+    .comunity > div {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 320px;
+        backface-visibility: hidden;
+        -webkit-backface-visibility: hidden;
+        transition: 0.8s;
+    }
+
+    .comunity_back {
+        transform:rotateY(180deg);
+        -webkit-transform:rotateY(180deg);
+    }
+
+    .comunity:hover .comunity_front {
+        transform:rotateY(180deg);
+        -webkit-transform:rotateY(180deg);
+    }
+
+    .comunity:hover .comunity_back {
+        transform:rotateY(360deg);
+        -webkit-transform:rotateY(360deg);
+    }
 
         .lesson_img, .comunity_img {
             width: 100%;
@@ -51,13 +85,14 @@
             left: 0;
             background: rgba(39, 39, 39, 0.5);
             padding: 10px;
-            width: 320px;
-            height: 180px;
+            width: 300px;
+            height: 160px;
         }
 
             .lesson_info, .comunity_info {
                 position: relative;
-                width: calc(100% - 20px);
+                margin: 0;
+                width: calc(100%);
                 height: 160px;
             }
 
@@ -117,6 +152,24 @@
                             font-size: 10px;
                             border-radius: 5px;
                         }
+
+            .center {
+                display: table;
+                width: 100%;
+                height: 160px;
+            }
+
+                .center span {
+                    display: table-cell;
+                    vertical-align: middle;
+                }
+
+                    .comunity_lesson {
+                        color: #fff;
+                        font-size: 14px;
+                        line-height: 20px;
+                        text-align: center;
+                    }
 
 
 
