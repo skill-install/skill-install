@@ -1,0 +1,14 @@
+body {
+    margin: 60px 0 0 0;
+    padding: 0;
+    /*background: #272727;*/
+    background: #2B3340;
+}
+
+h1 {
+    display: none;
+}
+
+.clear {
+    clear: both;
+}
