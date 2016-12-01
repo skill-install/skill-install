@@ -5,6 +5,7 @@
     <meta charset="utf-8">
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <title>@yield('title')</title>
+    <link rel="stylesheet" href="/css/common/pc.css">
     <link rel="stylesheet" href="/css/style.css">
     <link rel="stylesheet" href="/css/form.css">
     @yield('css')
@@ -16,9 +17,7 @@
     @if (session('flash_message'))
         <div class="flash_message" onclick="this.classList.add('hidden')">{{ session('flash_message') }}</div>
     @endif
-    <header>
-        <!-- @include('parts.nav') -->
-    </header>
+    @include('parts.nav')
     <div id="content">
         <h1>@yield('body_title')</h1>
         @yield('body')
