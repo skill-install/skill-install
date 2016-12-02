@@ -12,7 +12,7 @@ class PrivateProfile extends Model
      * @var array
      */
     protected $fillable = [
-        'nickname','img'
+        'user_id', 'name'
     ];
 
     public function user() {

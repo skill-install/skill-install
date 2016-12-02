@@ -16,7 +16,7 @@ class CreatePrivateProfilesTable extends Migration
         Schema::create('private_profiles', function (Blueprint $table) {
             $table->increments('id');
             $table->integer('user_id')->unsigned();
-            $table->string('name', 256);
+            $table->string('name', 256)->nullable();
             $table->timestamps();
         });
     }

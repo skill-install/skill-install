@@ -50,7 +50,7 @@ class User extends Authenticatable
         return $this->hasOne('App\Profile');
     }
 
-    public function profile() {
+    public function privateProfile() {
         return $this->hasOne('App\PrivateProfile');
     }
 }
