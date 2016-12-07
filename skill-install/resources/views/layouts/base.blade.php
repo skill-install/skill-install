@@ -11,6 +11,9 @@
     @yield('css')
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
     <script type="text/javascript" src="/js/jquery-3.1.1.min.js"></script>
+    <script type="text/javascript" src="/js/jquery.easing.1.3.js"></script>
+    <script type="text/javascript" src="/js/jquery.transit.min.js"></script>
+    <script type="text/javascript" src="/js/jquery.color.js"></script>
     @yield('head')
 </head>
 <body>
@@ -22,6 +25,7 @@
         <h1>@yield('body_title')</h1>
         @yield('body')
     </div>
+    <script type="text/javascript" src="/js/nav.js"></script>
     @yield('js')
 </body>
 </html>

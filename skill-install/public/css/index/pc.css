@@ -1,8 +1,4 @@
 
-.clear {
-    clear: both;
-}
-
 #wrapper {
     margin: 0 auto;
     width: 980px;
@@ -14,66 +10,38 @@
         overflow: hidden;
     }
 
+    #new_comunity {
+        margin-bottom: 60px;
+        width: 100%;
+        overflow: hidden;
+    }
+
 .list_title {
     margin: 20px 0;
-    /*padding: 0 10px;*/
     width: 100%;
     height: 40px;
-    /*color: #AFDCDD;*/
-    color: #fff;
-    /*background: #444444;*/
+    color: #999999;
     font-size: 18px;
     /*font-weight: bold;*/
     line-height: 40px;
 }
 
-.lesson, .comunity {
+.lesson {
     position: relative;
     float: left;
     width: 320px;
     height: calc(320px / 16 * 9);
 }
 
-.comunity {
-    perspective: 400px;
-    -webkit-perspective: 400px;
-}
-
-.lesson:nth-child(3n+2), .comunity:nth-child(3n+2) {
+.lesson:nth-child(3n+2) {
     margin: 0 10px;
 }
 
-.lesson:nth-child(1n+4), .comunity:nth-child(1n+4) {
+.lesson:nth-child(1n+4) {
     margin-top: 10px;
 }
 
-    .comunity > div {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 320px;
-        backface-visibility: hidden;
-        -webkit-backface-visibility: hidden;
-        transition: 0.8s;
-    }
-
-    .comunity_back {
-        transform:rotateY(180deg);
-        -webkit-transform:rotateY(180deg);
-    }
-
-    .comunity:hover .comunity_front {
-        transform:rotateY(180deg);
-        -webkit-transform:rotateY(180deg);
-    }
-
-    .comunity:hover .comunity_back {
-        transform:rotateY(360deg);
-        -webkit-transform:rotateY(360deg);
-    }
-
-        .lesson_img, .comunity_img {
+        .lesson_img {
             width: 100%;
             height: auto;
             vertical-align: bottom;
@@ -83,13 +51,13 @@
             position: absolute;
             top: 0;
             left: 0;
-            background: rgba(39, 39, 39, 0.5);
+            background: rgba(39, 39, 39, 0.3);
             padding: 10px;
-            width: 300px;
-            height: 160px;
+            width: 320px;
+            height: 180px;
         }
 
-            .lesson_info, .comunity_info {
+            .lesson_info {
                 position: relative;
                 margin: 0;
                 width: calc(100%);
@@ -131,7 +99,7 @@
                     left: 0;
                 }
 
-                    .lesson_title, .comunity_title {
+                    .lesson_title {
                         margin-bottom: 5px;
                         width: 100%;
                         color: #fff;
@@ -147,7 +115,7 @@
                             float: left;
                             margin-right: 5px;
                             padding: 5px;
-                            background: #333333;
+                            background: #272727;
                             color: #fff;
                             font-size: 10px;
                             border-radius: 5px;
@@ -164,14 +132,51 @@
                     vertical-align: middle;
                 }
 
-                    .comunity_lesson {
-                        color: #fff;
-                        font-size: 14px;
-                        line-height: 20px;
-                        text-align: center;
-                    }
 
+.comunity {
+    float: left;
+    padding: 20px;
+    width: 485px;
+    background: rgba(82,82,78,0.3);
+    /*background: rgba(56,56,58,0.3);*/
+}
 
+ .comunity:nth-child(2n) {
+    margin-left: 10px;
+ }
+
+ .comunity:nth-child(1n+3) {
+    margin-top: 10px;
+}
+
+        .comunity_title {
+            margin-bottom: 15px;
+            /*color: #EDE0B4;*/
+            color: #EEF3E9;
+            font-size: 18px;
+            line-height: 1;
+        }
+
+        .comunity_lesson {
+            margin-top: 10px;
+            overflow: hidden;
+        }
+
+            .comunity_lesson img {
+                display: block;
+                float: left;
+                width: 128px;
+                height: auto;
+                vertical-align: bottom;
+            }
+
+            .comunity_lesson_title {
+                float: left;
+                margin-left: 10px;
+                color: #fff;
+                font-size: 16px;
+                line-height: 72px;
+            }
 
 
 
