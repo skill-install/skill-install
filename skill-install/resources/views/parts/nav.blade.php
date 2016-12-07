@@ -1,3 +1,4 @@
+
 <header>
     <div id="header_container">
         <div id="logo">Me too</div>
@@ -8,18 +9,18 @@
     <div id="nav_container">
         <div class="nav_list">
             <div class="nav_translate front">
-                <a href="">トップページ</a>
+                <a href="<?php echo config('url.home'); ?>">トップページ</a>
             </div>
             <div class="nav_translate back">
-                <a href="">トップページ</a>
+                <a href="<?php echo config('url.home'); ?>">トップページ</a>
             </div>
         </div>
         <div class="nav_list">
             <div class="nav_translate front">
-                <a  href="">ログイン</a>
+                <a  href="/login.blade.php">ログイン</a>
             </div>
             <div class="nav_translate back">
-                <a href="">ログイン</a>
+                <a href="/login.blade.php">ログイン</a>
             </div>
         </div>
         <div class="nav_list">
