@@ -18,4 +18,9 @@ Route::resource('/', 'IndexController');
 
 Auth::routes();
 
-Route::get('/home', 'HomeController@index');
+Route::group(['middleware' => ['auth']], function () {
+
+    Route::get('/home', 'HomeController@index');
+    Route::resource('/home/community', 'CommunityController')
+
+});
