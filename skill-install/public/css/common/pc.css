@@ -7,11 +7,11 @@
 }
 
 body {
-    margin: 60px 0 0 0;
+    margin: 0;
     padding: 0;
     /*background: #272727;*/
-    background: url(/img/background-texture.jpg) repeat left top;
-    /*background: url(/img/page_bg.png) repeat left top;*/
+    /*background: url(/img/background-texture.jpg) repeat left top;*/
+    background: url(/img/page_bg.png) repeat left top;
     font-family: "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;

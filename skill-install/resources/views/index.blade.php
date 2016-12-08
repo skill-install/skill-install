@@ -5,9 +5,7 @@
 @endsection
 
 @section('css')
-    <link rel="stylesheet" href="/css/common/pc.css">
     <link rel="stylesheet" href="/css/index/pc.css">
-    <link rel="stylesheet" href="/css/nav/pc.css">
     <!-- <link rel="stylesheet" href="/css/index/phone.css"> -->
     <!-- <link rel="stylesheet" href="/css/index/tablet.css"> -->
 @endsection

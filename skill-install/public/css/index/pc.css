@@ -137,8 +137,8 @@
     float: left;
     padding: 20px;
     width: 485px;
-    background: rgba(82,82,78,0.3);
-    /*background: rgba(56,56,58,0.3);*/
+    /*background: rgba(82,82,78,0.3);*/
+    background: rgba(56,56,58,0.3);
 }
 
  .comunity:nth-child(2n) {

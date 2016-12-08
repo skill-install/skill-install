@@ -80,9 +80,7 @@ nav {
 
     #logo {
         float: left;
-        /*color: #3DD2AE;*/
         color: #93CFF4;
-        /*color: #B9FF32;*/
         height: 60px;
         line-height: 60px;
         font-size: 20px;
@@ -93,7 +91,6 @@ nav {
         float: right;
         margin-top: 10px;
         color: #93CFF4;
-        /*color: #B9FF32;*/
         font-size: 20px;
         line-height: 60px;
     }
