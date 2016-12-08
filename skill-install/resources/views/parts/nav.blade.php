@@ -9,18 +9,26 @@
     <div id="nav_container">
         <div class="nav_list">
             <div class="nav_translate front">
-                <a href="<?php echo config('url.home'); ?>">トップページ</a>
+                <a href="<?php echo config('url.index'); ?>">トップページ</a>
             </div>
             <div class="nav_translate back">
-                <a href="<?php echo config('url.home'); ?>">トップページ</a>
+                <a href="<?php echo config('url.index'); ?>">トップページ</a>
             </div>
         </div>
         <div class="nav_list">
             <div class="nav_translate front">
-                <a  href="/login.blade.php">ログイン</a>
+                <a  href="<?php echo config('url.register'); ?>">初めての方</a>
             </div>
             <div class="nav_translate back">
-                <a href="/login.blade.php">ログイン</a>
+                <a href="<?php echo config('url.register'); ?>">初めての方</a>
+            </div>
+        </div>
+        <div class="nav_list">
+            <div class="nav_translate front">
+                <a  href="<?php echo config('url.login'); ?>">ログイン</a>
+            </div>
+            <div class="nav_translate back">
+                <a href="<?php echo config('url.login'); ?>">ログイン</a>
             </div>
         </div>
         <div class="nav_list">
