@@ -1,3 +1,17 @@
+@keyframes shake {
+    0% { transform: translate(4px, 0px) rotate(0deg); }
+    10% { transform: translate(-3px, 0px) rotate(0deg); }
+    20% { transform: translate(-5px, 0px) rotate(0deg); }
+    30% { transform: translate(0px, 0px) rotate(0deg); }
+    40% { transform: translate(3px, 0px) rotate(0deg); }
+    50% { transform: translate(-3px, 0px) rotate(0deg); }
+    60% { transform: translate(-5px, 0px) rotate(0deg); }
+    70% { transform: translate(4px, 0px) rotate(0deg); }
+    80% { transform: translate(-3px, 0px) rotate(0deg); }
+    90% { transform: translate(3px, 0px) rotate(0deg); }
+    100% { transform: translate(3px, 0px) rotate(0deg); }
+}
+
 span {
     display: table-cell;
     vertical-align: middle;
@@ -6,10 +20,25 @@ span {
 
 #register_wrapper {
     display: table;
+    position: relative;
     margin: 0 auto;
     width: 400px;
     height: 100vh;
 }
+
+    #middle {
+        perspective: 100px;
+        -webkit-perspective: 100px;
+        -ms-perspective: 100px;
+        -o-perspective: 100px;
+        -moz-perspective: 100px;
+    }
+
+    #form {
+        /*display: none;*/
+        transform: translateZ(0px);
+        -webkit-transform: translateZ(0px);
+    }
 
     #title {
         width: 100%;
@@ -20,8 +49,32 @@ span {
         text-align: center;
     }
 
-    #email {
+    #nickname {
         margin-top: 30px;
+        background: rgba(255,255,255,0);
+        width: 100%;
+        height: 30px;
+        color: #fff;
+        font-size: 16px;
+        line-height: 30px;
+        outline: 0;
+        border-top: none;
+        border-right: none;
+        border-left: none;
+        border-radius: 0;
+        border-bottom: 2px solid #93CFF4;
+    }
+
+    #nickname:placeholder-shown {
+        color: #58656F;
+    }
+
+    #nickname::-webkit-input-placeholder {
+        color: #58656F;
+    }
+
+    #email {
+        margin-top: 20px;
         background: rgba(255,255,255,0);
         width: 100%;
         height: 30px;
@@ -68,6 +121,30 @@ span {
         color: #58656F;
     }
 
+    #password_confirmation {
+        margin-top: 20px;
+        background: rgba(255,255,255,0);
+        width: 100%;
+        height: 30px;
+        color: #fff;
+        font-size: 16px;
+        line-height: 30px;
+        outline: 0;
+        border-top: none;
+        border-right: none;
+        border-left: none;
+        border-radius: 0;
+        border-bottom: 2px solid #93CFF4;
+    }
+
+    #password_confirmation:placeholder-shown {
+        color: #58656F;
+    }
+
+    #password_confirmation::-webkit-input-placeholder {
+        color: #58656F;
+    }
+
     #submit {
         display: inline-block;
         margin-top: 30px;
@@ -79,3 +156,69 @@ span {
         border: 2px solid #93CFF4;
         border-radius: 5px;
     }
+
+    #alert {
+        display: none;
+        padding: 20px 20px 0;
+        transform: translateZ(60px);
+        -webkit-transform: translateZ(60px);
+        background: rgba(56,56,58,0.3);
+        height: 128.2px;
+        opacity: 0;
+        overflow: hidden;
+    }
+
+        #alert_title {
+            color: #93CFF4;
+            font-size: 20px;
+            font-weight: bold;
+            line-height: 1;
+            text-align: center;
+        }
+
+        #alert_description {
+            margin-top: calc(25px - (16px * 1.7 - 16px) / 2);
+            margin-bottom: calc(20px - (16px * 1.7 - 16px) / 2);
+            color: #fff;
+            font-size: 16px;
+            font-weight: bold;
+            line-height: 1.7;
+            text-align: center;
+        }
+
+    #complete {
+        padding: 0px 20px 0;
+        height: 0px;
+        background: rgba(56,56,58,0.3);
+        overflow: hidden;
+    }
+
+        #complete div {
+            opacity: 0;
+        }
+
+        #complete_title {
+            color: #93CFF4;
+            font-size: 20px;
+            font-weight: bold;
+            line-height: 1;
+            text-align: center;
+        }
+
+        #register_email {
+            margin-top: 20px;
+            color: #fff;
+            font-size: 16px;
+            font-weight: bold;
+            line-height: 1;
+        }
+
+        #complete_description {
+            margin-top: calc(20px - (16px * 1.7 - 16px) / 2);
+            margin-bottom: calc(20px - (16px * 1.7 - 16px) / 2);
+            color: #fff;
+            font-size: 16px;
+            font-weight: bold;
+            line-height: 1.7;
+            /*text-align: center;*/
+        }
