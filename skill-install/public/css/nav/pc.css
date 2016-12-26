@@ -17,8 +17,8 @@ nav {
     -webkit-transform: translate(0%, -100%);
     -webkit-transition-timing-function: cubic-bezier(0.8, 0, 0.1, 1.0);
     /*background: #272727;*/
-    background: rgba(25,25,25,0.9);
-    /*background: url(/img/page_bg.png) repeat left top;*/
+    /*background: rgba(25,25,25,0.9);*/
+    background: url(/img/background-texture.jpg) repeat left top;
     width: 100%;
     height: 100vh;
 }
