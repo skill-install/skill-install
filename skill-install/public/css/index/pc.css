@@ -1,0 +1,186 @@
+
+#wrapper {
+    margin: 0 auto;
+    width: 980px;
+    overflow: hidden;
+}
+
+    #free_video {
+        width: 100%;
+        overflow: hidden;
+    }
+
+    #new_comunity {
+        margin-bottom: 60px;
+        width: 100%;
+        overflow: hidden;
+    }
+
+.list_title {
+    margin: 20px 0;
+    width: 100%;
+    height: 40px;
+    color: #999999;
+    font-size: 18px;
+    /*font-weight: bold;*/
+    line-height: 40px;
+}
+
+.lesson {
+    position: relative;
+    float: left;
+    width: 320px;
+    height: calc(320px / 16 * 9);
+}
+
+.lesson:nth-child(3n+2) {
+    margin: 0 10px;
+}
+
+.lesson:nth-child(1n+4) {
+    margin-top: 10px;
+}
+
+        .lesson_img {
+            width: 100%;
+            height: auto;
+            vertical-align: bottom;
+        }
+
+        .cover {
+            position: absolute;
+            top: 0;
+            left: 0;
+            background: rgba(39, 39, 39, 0.3);
+            padding: 10px;
+            width: 320px;
+            height: 180px;
+        }
+
+            .lesson_info {
+                position: relative;
+                margin: 0;
+                width: calc(100%);
+                height: 160px;
+            }
+
+                .new_lesson {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    color: #fff;
+                    width: 50%;
+                    height: 14px;
+                    font-size: 14px;
+                    font-weight: bold;
+                    line-height: 1;
+                }
+
+                .favorite, .follow {
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    color: #fff;
+                    width: 50%;
+                    font-size: 14px;
+                    line-height: 1;
+                    text-align: right;
+                }
+
+                    .favorite i, .follow i {
+                        font-size: 14px;
+                        font-weight: bold;
+                    }
+
+                .info_bottom {
+                    position: absolute;
+                    width: 100%;
+                    bottom: 0;
+                    left: 0;
+                }
+
+                    .lesson_title {
+                        margin-bottom: 5px;
+                        width: 100%;
+                        color: #fff;
+                        font-size: 16px;
+                        line-height: 1;
+                    }
+
+                    .category_wrapper {
+                        overflow: hidden;
+                    }
+
+                        .category {
+                            float: left;
+                            margin-right: 5px;
+                            padding: 5px;
+                            background: #272727;
+                            color: #fff;
+                            font-size: 10px;
+                            border-radius: 5px;
+                        }
+
+            .center {
+                display: table;
+                width: 100%;
+                height: 160px;
+            }
+
+                .center span {
+                    display: table-cell;
+                    vertical-align: middle;
+                }
+
+
+.comunity {
+    float: left;
+    padding: 20px;
+    width: 485px;
+    /*background: rgba(82,82,78,0.3);*/
+    background: rgba(56,56,58,0.3);
+}
+
+ .comunity:nth-child(2n) {
+    margin-left: 10px;
+ }
+
+ .comunity:nth-child(1n+3) {
+    margin-top: 10px;
+}
+
+        .comunity_title {
+            margin-bottom: 15px;
+            /*color: #EDE0B4;*/
+            color: #EEF3E9;
+            font-size: 18px;
+            line-height: 1;
+        }
+
+        .comunity_lesson {
+            margin-top: 10px;
+            overflow: hidden;
+        }
+
+            .comunity_lesson img {
+                display: block;
+                float: left;
+                width: 128px;
+                height: auto;
+                vertical-align: bottom;
+            }
+
+            .comunity_lesson_title {
+                float: left;
+                margin-left: 10px;
+                color: #fff;
+                font-size: 16px;
+                line-height: 72px;
+            }
+
+
+
+
+
+
+

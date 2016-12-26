@@ -16,7 +16,8 @@ return [
     |
     */
 
-    'driver' => env('MAIL_DRIVER', 'smtp'),
+    // 'driver' => env('MAIL_DRIVER', 'smtp'),
+    'driver' => 'log',
 
     /*
     |--------------------------------------------------------------------------
@@ -56,8 +57,8 @@ return [
     */
 
     'from' => [
-        'address' => 'hello@example.com',
-        'name' => 'Example',
+        'address' => env('MAIL_FROM_ADDRESS', null),
+        'name' => 'Skill-Install運営事務局'
     ],
 
     /*
