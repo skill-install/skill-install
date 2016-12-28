@@ -43,5 +43,5 @@
 </div>
 @endsection
 @section('js')
-<script type="text/javascript" src="/js/mypage/community/create.js"></script>
+<script type="text/javascript" src="/js/mypage/lesson/create.js"></script>
 @endsection
