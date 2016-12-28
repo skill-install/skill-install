@@ -22,5 +22,6 @@ Route::group(['middleware' => ['auth']], function () {
 
     Route::get('/home', 'HomeController@index');
     Route::resource('/home/community', 'CommunityController');
+    Route::resource('/home/lesson', 'Mypage\LessonController');
 
 });

@@ -154,14 +154,6 @@ $(document).ready(function() {
                 jQuery.each(errorShake, function(k,v) {
                     setTimeout(function() {
                         $("#" + v).css("animation-name", "none");
-                        // if (1 == error[v]) {
-                        //     $("#" + v + "_input").children(".error_txt").text(v + "が未入力です");
-                        // } else if (2 == error[v]) {
-                        //     $("#" + v + "_input").children(".error_txt").text(v + "の形式が違います");
-                        // }
-                        // $("#" + v + "_input").children(".error_txt").animate({
-                        //     opacity: '1'
-                        // }, 1000);
                     }, 500);
                     $("#" + v).css("animation", ".5s shake");
                 });
@@ -185,7 +177,7 @@ $(document).ready(function() {
                     error[key] = 1;
                 } else {
                 // 値があるとき
-                    if ('' !== reg && null !== reg) {
+                    if (reg && '' !== reg) {
                         // 正規表現にマッチしているかどうか
                         var match = data[key].match(reg);
                         if (!match) {
